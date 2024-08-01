@@ -256,7 +256,7 @@ impl UsbDevice {
             trace!("Read chunk {seq_idx} ({rem} bytes remaining)");
 
             // Read next chunk, constant timeout as chunks should be sent end-to-end
-            let n = match self.device.read_timeout(&mut buff, 500) {
+            let n = match self.device.read_timeout(&mut buff, 1000) {
                 Ok(n) => n,
                 Err(e) => return Err(e.into()),
             };
