@@ -7,8 +7,3 @@ members = [
     "sim",
     "cli",
 ]
-
-[patch.crates-io]
-ledger-proto = { path = "proto" }
-ledger-lib = { path = "lib" }
-ledger-sim = { path = "sim" }

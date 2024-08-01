@@ -18,5 +18,5 @@ humantime = "2.1.0"
 hex = "0.4.3"
 serde_json = "1.0.100"
 
-ledger-lib = { version =  "0.1.0", features = [ "clap" ] }
-ledger-proto = { version = "0.1.0" }
+ledger-lib = { path = "../lib", version =  "0.1.0", features = [ "clap" ] }
+ledger-proto = { path = "../proto", version = "0.1.0" }
